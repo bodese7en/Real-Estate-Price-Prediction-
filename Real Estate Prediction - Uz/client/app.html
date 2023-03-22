@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Price Uzbekistan Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+        <h2>Size (Squareft)</h2>
+    <input class="area"  type="text" id="uiSize" class="floatLabel" name="Squareft" value="1000">
+	
+<h2>Rooms</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-rooms-1" name="uiRooms" value="1"/>
+		<label for="radio-rooms-1">1</label>
+		<input type="radio" id="radio-rooms-2" name="uiRooms" value="2" checked/>
+		<label for="radio-rooms-2">2</label>
+		<input type="radio" id="radio-rooms-3" name="uiRooms" value="3"/>
+		<label for="radio-rooms-3">3</label>
+		<input type="radio" id="radio-rooms-4" name="uiRooms" value="4"/>
+		<label for="radio-rooms-4">4</label>
+		<input type="radio" id="radio-rooms-5" name="uiRooms" value="5"/>
+		<label for="radio-rooms-5">5</label>
+	</div>
+	
+</form>
+<form class="form">
+	<h2>Level - Preferred Floor</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-level-1" name="uiLevel" value="1"/>
+		<label for="radio-level-1">1</label>
+		<input type="radio" id="radio-level-2" name="uiLevel" value="2" checked/>
+		<label for="radio-level-2">2</label>
+		<input type="radio" id="radio-level-3" name="uiLevel" value="3"/>
+		<label for="radio-level-3">3</label>
+		<input type="radio" id="radio-level-4" name="uiLevel" value="4"/>
+		<label for="radio-level-4">4</label>
+		<input type="radio" id="radio-level-5" name="uiLevel" value="5"/>
+		<label for="radio-level-5">5</label>
+       </div>
+       <div class="switch-field">
+        <input type="radio" id="radio-level-6" name="uiLevel" value="6"/>
+		<label for="radio-level-6">6</label>
+        <input type="radio" id="radio-level-7" name="uiLevel" value="7"/>
+		<label for="radio-level-7">7</label>
+        <input type="radio" id="radio-level-8" name="uiLevel" value="8"/>
+		<label for="radio-level-8">8</label>
+        <input type="radio" id="radio-level-9" name="uiLevel" value="9"/>
+		<label for="radio-level-9">9</label>
+        <input type="radio" id="radio-level-10" name="uiLevel" value="10"/>
+		<label for="radio-level-10">10</label>
+    </div>
+		
+
+    <h2>District</h2>
+	<div>
+  <select class="district" name="" id="uiDistrict">
+    <option value="" disabled="disabled" selected="selected">Choose a district</option>
+		<option>Mirobod</option>
+        <option>'Shayhontohur</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2> </h2> </div>
+</body>
+</html>
